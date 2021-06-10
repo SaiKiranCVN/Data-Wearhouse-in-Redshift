@@ -44,9 +44,8 @@ Dimension Tables -
 ## Implementation Steps
 
 <ol>
-<li>Write SQL 'CREATE', 'DROP' and 'INSERT' statements in `sql_queries.py` and run <br>`create_tables.py` to run it.</li>
-<li>Use `etl.ipynb` as a step by step guide to insert data one table at a time.</li>
-<li>Use `test.ipynb` to check if the data is inserted or not.</li>
-<li>Once all the steps are done, implement it in `etl.py` and run it to insert the whole data.</li>
+ <li>Connect with Redshift DB using the configuration in `dwh.cfg`.</li>
+<li>Write SQL 'CREATE', 'DROP' and 'INSERT' statements in `sql_queries.py` and run <br>`create_tables.py` to run it to create the tables.</li>
+<li>Run `etl.py` to load the data(json files) from S3 to Redshift staging tables, then select the required columns and insert into fact and dimentional tables.</li>
 </ol>
 
