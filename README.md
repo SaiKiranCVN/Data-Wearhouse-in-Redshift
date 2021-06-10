@@ -39,7 +39,7 @@ Dimension Tables -
 `time`- timestamps of records in songplays - start_time, hour, day, week, month, year, weekday
 <br><br>
 
-![alt txt](Db%20Design.jpg)
+![alt txt](DB%20Design.jpg)
 
 ## Implementation Steps
 
